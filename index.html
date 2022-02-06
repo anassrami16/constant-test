@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasaratApp Test Automation</title>
+    <link rel="stylesheet" type="text/css" href="semantic.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="semantic.min.js"></script>
+
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="page-1">
+            <div class="ui form">
+                <div class="fields">
+                    <div class="field">
+                        <label>First name</label>
+                        <input type="text" placeholder="First Name" id="input-1">
+                    </div>
+                    <div class="field">
+                        <label>Middle name</label>
+                        <input type="text" placeholder="Middle Name" id="input-2">
+                    </div>
+                    <div class="field">
+                        <label>Last name</label>
+                        <input type="text" placeholder="Last Name" id="input-3">
+                    </div>
+
+                </div>
+                <div class="fields">
+                    <div class="field">
+                        <label>Age</label>
+                        <input type="number" placeholder="Age" id="input-4">
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui form">
+                <div class="field">
+                    <label>Gender</label>
+                    <select id="select-1">
+                        <option value="" id="option-1">Gender</option>
+                        <option value="1" id="option-2">Male</option>
+                        <option value="0" id="option-3">Female</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="next-btn-container">
+                <button class="ui right labeled icon button next" id="next-btn-1">
+                    <i class="right arrow icon"></i>
+                    Next
+                </button>
+            </div>
+        </div>
+        <div class="page-2">
+            <div class="ui form">
+                <div class="field">
+                    <label>Text</label>
+                    <textarea id="input-5"></textarea>
+                </div>
+            </div>
+            <div class="ui form">
+                <div class="field">
+                    <label>E-mail</label>
+                    <input type="email" placeholder="joe@schmoe.com" id="input-6">
+                </div>
+
+            </div>
+
+            <div class="inline-btns">
+                <div class="back-btn-container">
+                    <button class="ui labeled icon button back" id="back-btn-1">
+                        <i class="left chevron icon"></i>
+                        Back
+                    </button>
+                </div>
+                <div class="submit-btn-container">
+                    <button class="ui right labeled icon button next" id="submit-btn-1">
+                        <i class="right arrow icon"></i>
+                        Send
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="page-3">
+            <img class="ui medium circular image flex-center"
+                src="https://cdn.pixabay.com/photo/2017/07/10/16/07/thank-you-2490552_960_720.png">
+            <div class="ui message">
+                <div class="header">
+                    Thank you
+                </div>
+                <p>Thanks for the feedback on your experience with our customer support team. We sincerely appreciate
+                    your insight because it helps us build a better customer experience. If you have any more questions,
+                    comments, or concerns or compliments, please feel welcome to reach back out as we would be more than
+                    happy to assist.</p>
+            </div>
+        </div>
+
+
+        <script src="./app.js"></script>
+</body>
+
+</html>
